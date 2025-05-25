@@ -1,0 +1,38 @@
+.navbar {
+  background-color: black;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+/* In Navbar.css or App.css */
+.navbar {
+  border-bottom: 1px solid #444; /* or any subtle color you prefer */
+  padding: 16px 20px;
+  background-color: #000; /* optional */
+}
+
+.nav-links a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
