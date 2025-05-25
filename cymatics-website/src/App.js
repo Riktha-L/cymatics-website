@@ -6,6 +6,7 @@ import About from './components/about';
 import Services from './components/services';
 import WhyCymatics from './components/whycymatics';
 import Technology from './components/technology';
+import Testimonials from './components/testimonials';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
     <Services/>
     <WhyCymatics/>
     <Technology/>
+    <Testimonials/>
     </div>
   );
 }

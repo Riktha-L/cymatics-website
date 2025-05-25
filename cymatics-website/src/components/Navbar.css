@@ -1,38 +1,70 @@
+/* Updated Navbar.css */
 .navbar {
-  background-color: black;
-  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.9);
+  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  font-family: Arial, sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,170,255,0.1);
 }
 
 .logo {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 2rem;
-}
-/* In Navbar.css or App.css */
-.navbar {
-  border-bottom: 1px solid #444; /* or any subtle color you prefer */
-  padding: 16px 20px;
-  background-color: #000; /* optional */
+  list-style: none;
 }
 
 .nav-links a {
-  font-size: 1rem;
-  color: white;
+  color: #eee;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
 }
 
-.nav-links a:hover {
-  color: #00bfff;
+.nav-links a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00aaff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover:after,
+.nav-links a.active:after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: #00aaff;
+}
+
+.nav-cta {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-cta:hover {
+  background: #0088cc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,170,255,0.3);
 }

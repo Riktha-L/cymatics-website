@@ -1,36 +1,23 @@
-// src/components/Hero.jsx
+
 import React from 'react';
-import logo from '../assets/logo.png'; 
+import './hero.css';
+import droneBg from '../assets/logo.png'; // Add this image
+
 const Hero = () => {
   return (
-    <section className="hero" style={styles.hero}>
-      <img src={logo} alt="Cymatics Logo" style={styles.logo} />
-      <h1 style={styles.title}>Welcome to Cymatics</h1>
-      <p style={styles.subtitle}>Aerial Solutions Powered by Innovation</p>
+    <section className="hero" style={{ backgroundImage: `url(${droneBg})` }}>
+      <div className="hero-overlay">
+        <div className="hero-content">
+          <h1 className="hero-title">AERIAL INTELLIGENCE REDEFINED</h1>
+          <p className="hero-subtitle">Precision drone solutions for industries that demand excellence</p>
+          <div className="hero-cta">
+            <button className="hero-btn">Explore Services</button>
+            <button className="hero-btn-outline">Learn More</button>
+          </div>
+        </div>
+      </div>
     </section>
   );
-};
-
-const styles = {
-  hero: {
-    backgroundColor: '#000',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '60px 20px',
-  },
-  logo: {
-    width: '200px',
-    maxWidth: '80%',
-    marginBottom: '20px',
-  },
-  title: {
-    fontSize: '2.5rem',
-    margin: '10px 0',
-  },
-  subtitle: {
-    fontSize: '1.2rem',
-    color: '#ccc',
-  },
 };
 
 export default Hero;
