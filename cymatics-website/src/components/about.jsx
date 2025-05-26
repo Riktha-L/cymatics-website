@@ -3,7 +3,7 @@ import './about.css';
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-header">
           <h2>About <span>Cymatics</span></h2>
@@ -18,8 +18,6 @@ const About = () => {
               creativity to offer unmatched services to diverse industries, from film to infrastructure.
             </p>
           </div>
-
-          
         </div>
       </div>
     </section>

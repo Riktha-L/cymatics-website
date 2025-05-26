@@ -9,9 +9,6 @@ const techItems = [
   { icon: <FaMapMarkedAlt />, title: 'Precision Mapping' },
 ];
 
-
-
-
 const styles = {
   section: {
     backgroundColor: '#111',
@@ -63,7 +60,7 @@ const Technology = () => {
   const [hoveredIndex, setHoveredIndex] = React.useState(null);
 
   return (
-    <section style={styles.section}>
+    <section id="technology" style={styles.section}>
       <h2 style={styles.title}>Our Technology</h2>
       <div
         style={styles.scroll}
@@ -89,4 +86,5 @@ const Technology = () => {
     </section>
   );
 };
+
 export default Technology;

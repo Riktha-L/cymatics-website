@@ -26,7 +26,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section style={styles.section}>
+    <section id="services" style={styles.section}>
       <div style={styles.container}>
         <h2 style={styles.heading}>Our Services</h2>
         <div style={styles.grid}>

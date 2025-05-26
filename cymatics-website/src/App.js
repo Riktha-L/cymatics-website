@@ -7,6 +7,8 @@ import Services from './components/services';
 import WhyCymatics from './components/whycymatics';
 import Technology from './components/technology';
 import Testimonials from './components/testimonials';
+import Contact from './components/contact';
+import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
     <WhyCymatics/>
     <Technology/>
     <Testimonials/>
+    <Contact/>
+    <Footer/>
     </div>
   );
 }
